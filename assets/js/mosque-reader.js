@@ -40,9 +40,12 @@ function drawMosqueElement(id, name, address, imageUrl) {
     nameElement.appendChild(nameNickElement);
     nameElement.innerHTML += name;
 
+    let addressElement = document.createElement("span");
+    addressElement.innerHTML = address;
     memberInfoElement.appendChild(nameElement);
+    memberInfoElement.appendChild(addressElement);
     memberElement.appendChild(memberInfoElement);
-
+    
     divElement.appendChild(memberElement);
 
     return divElement;
