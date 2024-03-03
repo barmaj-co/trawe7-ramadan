@@ -7,10 +7,19 @@ var mosques = [
 
 var readers = [
     { id: 1, name: 'محمد مبروك', youtubeUrl: '', imageUrl: '' },
-    { id: 2, name: 'محمد مدحت', youtubeUrl: '', imageUrl: '' },
-    { id: 3, name: 'عبدالرحمن شعبان', youtubeUrl: '', imageUrl: '' },
-    { id: 4, name: 'علي جاب الله', youtubeUrl: '', imageUrl: '' },
-    { id: 5, name: 'عبدالرحمن رشدي', youtubeUrl: '', imageUrl: '' },
+    { id: 2, name: 'سيد بحبح', youtubeUrl: '', imageUrl: '' },
+    { id: 3, name: 'حسن عثمان الازهرى', youtubeUrl: '', imageUrl: '' },
+    { id: 4, name: 'محمد محمد رزق', youtubeUrl: '', imageUrl: '' },
+    { id: 5, name: 'محمد جاد', youtubeUrl: '', imageUrl: '' },
+    { id: 6, name: 'يوسف عطا', youtubeUrl: '', imageUrl: '' },
+    { id: 7, name: 'سمير العياط', youtubeUrl: '', imageUrl: '' },
+    { id: 8, name: 'علي جاب الله', youtubeUrl: '', imageUrl: '' },
+    { id: 9, name: 'عبدالله محمد الحداد', youtubeUrl: '', imageUrl: '' },
+    { id: 10, name: 'انس الشقرفى', youtubeUrl: '', imageUrl: '' },
+    { id: 11, name: 'عباس عبدالعزيز', youtubeUrl: '', imageUrl: '' },
+    { id: 12, name: 'يوسف هشام', youtubeUrl: '', imageUrl: '' },
+    { id: 13, name: 'احمد السعيد على', youtubeUrl: '', imageUrl: '' },
+    { id: 14, name: 'محمد مدحت الحداد', youtubeUrl: '', imageUrl: '' },
 ];
 
 var schedules = [
