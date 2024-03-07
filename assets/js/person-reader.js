@@ -3,12 +3,12 @@ var _readers = readers;
 (function () {
     _readers.sort((a, b) => a.name.localeCompare(b.name));
     _readers.forEach(item => {
-        let reader = drawPersonElement(item.id, item.name, item.address, item.imageUrl);
+        let reader = drawPersonElement(item.id, item.name, item.imageUrl);
         document.getElementById("psersons").appendChild(reader);
     });
 })();
 
-function drawPersonElement(id, name, imageUrl) {
+function drawPersonElement(id, name,  imageUrl) {
     let divElement = document.createElement("a");
     divElement.href = "./mosque-readers.html?readerId=" + id;
     divElement.className += `col-lg-3 col-md-6 d-flex align-items-stretch mosque-card`;
