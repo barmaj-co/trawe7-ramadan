@@ -767,7 +767,7 @@ var schedules = [
         ]
     },
     {
-        day: ,25
+        day: 25,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
             { mosqueId: 2, readerIds: [] },
