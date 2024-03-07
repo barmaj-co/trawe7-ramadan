@@ -23,7 +23,7 @@ var mosques = [
 ];
 
 var readers = [
-    { id: 1, name: 'محمد مبروك', youtubeUrl: '', imageUrl: '' },
+    { id: 1, name: 'محمد مبروك', youtubeUrl: '', imageUrl: 'mohamed-mabrouk.jpg' },
     { id: 2, name: 'سيد بحبح', youtubeUrl: '', imageUrl: '' },
     { id: 3, name: 'حسن عثمان الازهرى', youtubeUrl: '', imageUrl: '' },
     { id: 4, name: 'محمد محمد رزق', youtubeUrl: '', imageUrl: '' },
