@@ -50,7 +50,7 @@ var schedules = [
         day: 1,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -80,7 +80,7 @@ var schedules = [
         day: 2,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -110,7 +110,7 @@ var schedules = [
         day: 3,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -140,7 +140,7 @@ var schedules = [
         day: 4,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -170,7 +170,7 @@ var schedules = [
         day: 5,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -200,7 +200,7 @@ var schedules = [
         day: 6,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -230,7 +230,7 @@ var schedules = [
         day: 7,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -260,7 +260,7 @@ var schedules = [
         day: 8,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -290,7 +290,7 @@ var schedules = [
         day: 9,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -320,7 +320,7 @@ var schedules = [
         day: 10,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -350,7 +350,7 @@ var schedules = [
         day: 11,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -380,7 +380,7 @@ var schedules = [
         day: 12,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -410,7 +410,7 @@ var schedules = [
         day: 13,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -440,7 +440,7 @@ var schedules = [
         day: 14,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -470,7 +470,7 @@ var schedules = [
         day: 15,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -500,7 +500,7 @@ var schedules = [
         day: 16,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -530,7 +530,7 @@ var schedules = [
         day: 17,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -560,7 +560,7 @@ var schedules = [
         day: 18,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -590,7 +590,7 @@ var schedules = [
         day: 19,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -620,7 +620,7 @@ var schedules = [
         day: 20,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -650,7 +650,7 @@ var schedules = [
         day: 21,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -680,7 +680,7 @@ var schedules = [
         day: 22,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -710,7 +710,7 @@ var schedules = [
         day: 23,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -740,7 +740,7 @@ var schedules = [
         day: 24,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -770,7 +770,7 @@ var schedules = [
         day: 25,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -800,7 +800,7 @@ var schedules = [
         day: 26,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -830,7 +830,7 @@ var schedules = [
         day: 27,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -860,7 +860,7 @@ var schedules = [
         day: 28,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -890,7 +890,7 @@ var schedules = [
         day: 29,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
@@ -920,7 +920,7 @@ var schedules = [
         day: 30,
         mosqueReaders: [
             { mosqueId: 1, readerIds: [] },
-            { mosqueId: 2, readerIds: [] },
+            { mosqueId: 2, readerIds: [2] },
             { mosqueId: 3, readerIds: [] },
             { mosqueId: 4, readerIds: [] },
             { mosqueId: 5, readerIds: [] },
