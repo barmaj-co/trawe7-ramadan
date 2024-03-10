@@ -66,7 +66,7 @@ var schedules = [
             { mosqueId: 11, readerIds: [1,22] },
             { mosqueId: 12, readerIds: [9,12] },
             { mosqueId: 13, readerIds: [] },
-            { mosqueId: 14, readerIds: [] },
+            { mosqueId: 14, readerIds: [11] },
             { mosqueId: 15, readerIds: [25] },
             { mosqueId: 16, readerIds: [16] },
             { mosqueId: 17, readerIds: [] },
