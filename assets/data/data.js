@@ -45,6 +45,8 @@ var readers = [
     { id: 21, name: 'ابراهيم الدرس', youtubeUrl: '', imageUrl: '' },
     { id: 22, name: 'عبدالرحمن رشدى', youtubeUrl: '', imageUrl: '' },
     { id: 23, name: 'أشرف سكرانه', youtubeUrl: '', imageUrl: '' },
+    { id: 24, name: 'احمد الحارون', youtubeUrl: '', imageUrl: '' },
+    { id: 25, name: 'عبدالله مرزوق', youtubeUrl: '', imageUrl: '' },
 ];
 
 var schedules = [
@@ -65,11 +67,11 @@ var schedules = [
             { mosqueId: 12, readerIds: [9,12] },
             { mosqueId: 13, readerIds: [] },
             { mosqueId: 14, readerIds: [] },
-            { mosqueId: 15, readerIds: [] },
-            { mosqueId: 16, readerIds: [] },
+            { mosqueId: 15, readerIds: [25] },
+            { mosqueId: 16, readerIds: [16] },
             { mosqueId: 17, readerIds: [] },
             { mosqueId: 18, readerIds: [] },
-            { mosqueId: 19, readerIds: [] },
+            { mosqueId: 19, readerIds: [24] },
             { mosqueId: 20, readerIds: [21] }
         ]
     },
