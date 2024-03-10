@@ -43,6 +43,7 @@ var readers = [
     { id: 18, name: 'عبدالرحمن محمد على', youtubeUrl: '', imageUrl: '' },
     { id: 19, name: 'أحمد رضا الشقرفى', youtubeUrl: '', imageUrl: '' },
     { id: 20, name: 'محمد التابعى', youtubeUrl: '', imageUrl: '' },
+    { id: 21, name: 'ابراهيم الدرس', youtubeUrl: '', imageUrl: '' },
 ];
 
 var schedules = [
