@@ -17,7 +17,7 @@ function drawFooterElement() {
 
     let nameElement = document.createElement("div");
     nameElement.className += `credits`;
-    nameElement.innerHTML += "تصميم م.اسلام هيكل";
+   // nameElement.innerHTML += "تصميم م.اسلام هيكل";
     textElement.appendChild(nameElement);
 
     divElement.appendChild(textElement);
