@@ -19,6 +19,7 @@ var mosques = [
     { id: 18, name: 'علي عبدالسلام', address: 'بدواى', youtubeUrl: '', imageUrl: '' },
     { id: 19, name: 'الزاوية', address: 'بدواى', youtubeUrl: '', imageUrl: '' },
     { id: 20, name: 'الكبير', address: 'بدواى', youtubeUrl: '', imageUrl: '' },
+    { id: 21, name: 'الساجدين', address: 'بدواى', youtubeUrl: '', imageUrl: '' },
 ];
 
 var readers = [
@@ -47,6 +48,7 @@ var readers = [
     { id: 23, name: 'أشرف سكرانه', youtubeUrl: '', imageUrl: '' },
     { id: 24, name: 'احمد الحارون', youtubeUrl: '', imageUrl: '' },
     { id: 25, name: 'عبدالله مرزوق', youtubeUrl: '', imageUrl: '' },
+    { id: 26, name: 'ضياء احمد', youtubeUrl: '', imageUrl: 'diaa-ahmed.jpeg' },
 ];
 
 var schedules = [
@@ -72,7 +74,8 @@ var schedules = [
             { mosqueId: 17, readerIds: [16] },
             { mosqueId: 18, readerIds: [] },
             { mosqueId: 19, readerIds: [24] },
-            { mosqueId: 20, readerIds: [21] }
+            { mosqueId: 20, readerIds: [21] },
+            { mosqueId: 21, readerIds: [26] }
         ]
     },
    {
