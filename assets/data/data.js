@@ -2,7 +2,7 @@ var mosques = [
     { id: 1, name: 'المساكن', address: 'بدواى - بجوار نادى شبان بدواى', youtubeUrl: '', imageUrl: '' },
     { id: 2, name: 'التسويق', address: 'بدواي - بجوار الثلاجة', youtubeUrl: '', imageUrl: '' },
     { id: 3, name: 'عائشة رياض', address: 'بدواى - بجوار الحاج صبرى', youtubeUrl: '', imageUrl: '' },
-    { id: 4, name: 'عيسي', address: 'بدواى - امام الثانوى العام', youtubeUrl: '', imageUrl: '' },
+    { id: 4, name: 'قباء', address: 'بدواى - امام الثانوى العام', youtubeUrl: '', imageUrl: '' },
     { id: 5, name: 'عباد الرحمن', address: 'بدواى', youtubeUrl: '', imageUrl: '' },
     { id: 6, name: 'التوحيد', address: 'بدواى - الميدان', youtubeUrl: '', imageUrl: '' },
     { id: 7, name: 'رياض الصالحين', address: 'بدواى', youtubeUrl: '', imageUrl: '' },
@@ -19,7 +19,6 @@ var mosques = [
     { id: 18, name: 'علي عبدالسلام', address: 'بدواى', youtubeUrl: '', imageUrl: '' },
     { id: 19, name: 'الزاوية', address: 'بدواى', youtubeUrl: '', imageUrl: '' },
     { id: 20, name: 'الكبير', address: 'بدواى', youtubeUrl: '', imageUrl: '' },
-    { id: 21, name: 'قباء', address: 'بدواى', youtubeUrl: '', imageUrl: '' },
 ];
 
 var readers = [
@@ -44,6 +43,7 @@ var readers = [
     { id: 19, name: 'أحمد رضا الشقرفى', youtubeUrl: '', imageUrl: '' },
     { id: 20, name: 'محمد التابعى', youtubeUrl: '', imageUrl: '' },
     { id: 21, name: 'ابراهيم الدرس', youtubeUrl: '', imageUrl: '' },
+    { id: 22, name: 'عبدالرحمن رشدى', youtubeUrl: '', imageUrl: '' },
 ];
 
 var schedules = [
