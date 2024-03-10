@@ -23,7 +23,7 @@ function drawPersonElement(id, name,  imageUrl) {
     let imgElement = document.createElement("img");
     imgElement.classList += `img-fluid`;
     imgElement.src = `./assets/img/readers/${imageUrl?.length ? imageUrl : 'default-reader.png'}`;
-    imgElement.style.height = '10rem';
+    imgElement.style.height = '14rem';
     imgElement.style.width = '100%';
     memberImgElement.appendChild(imgElement);
     memberElement.appendChild(memberImgElement);
