@@ -35,7 +35,7 @@ var readers = [
     { id: 11, name: 'عباس عبدالعزيز', youtubeUrl: '', imageUrl: '' },
     { id: 12, name: 'يوسف هشام', youtubeUrl: '', imageUrl: '' },
     { id: 13, name: 'احمد السعيد على', youtubeUrl: '', imageUrl: '' },
-    { id: 14, name: 'محمد مدحت الحداد', youtubeUrl: '', imageUrl: '' },
+    { id: 14, name: 'محمد مدحت الحداد', youtubeUrl: '', imageUrl: 'mohamed-medhat.jpeg' },
     { id: 15, name: 'ابراهيم حمدى بلاطه', youtubeUrl: '', imageUrl: '' },
     { id: 16, name: 'حمدى بلاطه', youtubeUrl: '', imageUrl: '' },
     { id: 17, name: 'محمود عبدالستار', youtubeUrl: '', imageUrl: '' },
