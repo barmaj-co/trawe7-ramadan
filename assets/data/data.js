@@ -28,7 +28,7 @@ var readers = [
     { id: 4, name: 'محمد محمد رزق', youtubeUrl: '', imageUrl: '' },
     { id: 5, name: 'محمد جاد', youtubeUrl: '', imageUrl: '' },
     { id: 6, name: 'يوسف عطا', youtubeUrl: '', imageUrl: '' },
-    { id: 7, name: 'سمير العياط', youtubeUrl: '', imageUrl: '' },
+    { id: 7, name: 'سمير غانم', youtubeUrl: '', imageUrl: '' },
     { id: 8, name: 'علي جاب الله', youtubeUrl: '', imageUrl: '' },
     { id: 9, name: 'عبدالله محمد الحداد', youtubeUrl: '', imageUrl: '' },
     { id: 10, name: 'انس الشقرفى', youtubeUrl: '', imageUrl: '' },
