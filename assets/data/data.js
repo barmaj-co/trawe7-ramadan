@@ -68,8 +68,8 @@ var schedules = [
             { mosqueId: 13, readerIds: [] },
             { mosqueId: 14, readerIds: [11] },
             { mosqueId: 15, readerIds: [25] },
-            { mosqueId: 16, readerIds: [16] },
-            { mosqueId: 17, readerIds: [] },
+            { mosqueId: 16, readerIds: [15] },
+            { mosqueId: 17, readerIds: [16] },
             { mosqueId: 18, readerIds: [] },
             { mosqueId: 19, readerIds: [24] },
             { mosqueId: 20, readerIds: [21] }
