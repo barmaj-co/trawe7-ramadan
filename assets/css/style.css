@@ -632,7 +632,8 @@ section {
 .services .icon {
   position: absolute;
   top: -40px;
-  right: 25px;
+  /* right: 25px; */
+  right: calc(50% - 35px);
   transition: 0.2s;
   border-radius: 25%;
   border: 6px solid #fff;
@@ -666,9 +667,7 @@ section {
 }
 
 .services .icon-box:hover .icon {
-  background: #fff;
-  border: 2px solid #265954;
-  color: #265954;
+  background: #265954;
 }
 
 .services .icon-box:hover .icon i {
@@ -688,6 +687,11 @@ section {
   font-size: medium;
   font-style: italic;
   color: darkgray;
+}
+
+
+.advice-section .icon{
+  font-size: medium;
 }
 
 /*--------------------------------------------------------------
