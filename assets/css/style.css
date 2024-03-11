@@ -694,6 +694,12 @@ section {
   font-size: medium;
 }
 
+@media screen and (max-width: 768px) {
+  .advice-section .icon-box{
+    height: auto !important;
+  }
+}
+
 /*--------------------------------------------------------------
 # Our Team
 --------------------------------------------------------------*/
