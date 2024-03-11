@@ -13,37 +13,14 @@ function drawPersonElement(id, name,  imageUrl) {
     divElement.href = "./mosque-readers.html?readerId=" + id;
     divElement.className += `col-lg-3 col-md-6 d-flex align-items-stretch mosque-card`;
 
-    let memberElement = document.createElement("div");
-    memberElement.className += `member w-100`;
-    memberElement.setAttribute("data-aos", "fade-up");
-
-    let memberImgElement = document.createElement("div");
-    memberImgElement.className += `member-img`;
-
-    let imgElement = document.createElement("img");
-    imgElement.classList += `img-fluid`;
-    imgElement.src = `./assets/img/readers/${imageUrl?.length ? imageUrl : 'default-reader.png'}`;
-    imgElement.style.height = '14rem';
-    imgElement.style.width = '100%';
-    memberImgElement.appendChild(imgElement);
-    memberElement.appendChild(memberImgElement);
-
-    let memberInfoElement = document.createElement("div");
-    memberInfoElement.className += `member-info`;
-
-    let nameElement = document.createElement("h4");
-
-    let nameNickElement = document.createElement("span");
-    nameNickElement.className += `text-muted`;
-    nameNickElement.innerHTML = "القارئ : ";
-
-    nameElement.appendChild(nameNickElement);
-    nameElement.innerHTML += name;
-
-    memberInfoElement.appendChild(nameElement);
-    memberElement.appendChild(memberInfoElement);
-
-    divElement.appendChild(memberElement);
+    divElement.innerHTML += `<div class='member w-100' data-aos='fade-up'>
+                                <div class='member-img'>
+                                    <img class='img-fluid' style='height: 14rem !important;' width='100%' src='./assets/img/readers/${imageUrl?.length ? imageUrl : 'default-reader.png'}'>
+                                </div>
+                                <div class="member-info">
+                                    <h4><span class="text-muted">القارئ : </span>${name}</h4>
+                                </div>
+                            </div>`;
 
     return divElement;
 }
