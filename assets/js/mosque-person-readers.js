@@ -1,6 +1,6 @@
 var _readers = readers;
 var _mosques = mosques;
-var _schedules = schedules;
+var _schedules = schedules.filter(r => r.date < new Date());
 
 (function () {
 
@@ -12,13 +12,12 @@ var _schedules = schedules;
         let mosque = _mosques.find(m => m.id == mosqueId);
         document.getElementById("type").innerHTML = 'قراء تراويح مسجد ';
         document.getElementById("mosque-name").innerHTML = mosque.name;
-        document.getElementById("mosque-address").innerHTML = mosque.address;
 
         _schedules.forEach(item => {
             let mosqueSchedules = item.mosqueReaders.find(r => r.mosqueId == mosqueId);
             if (mosqueSchedules?.readerIds?.length > 0) {
                 let mosqueReaders = _readers.filter(r => mosqueSchedules?.readerIds?.includes(r.id));
-                let reader = drawReaderElement(item.day, mosqueReaders.map(r => r.name), "القارئ", 130);
+                let reader = drawReaderElement(item.day, item.dayName, mosqueReaders.map(r => r.name), "القارئ", 135);
                 document.getElementById("mosque-readers").appendChild(reader);
             }
         });
@@ -31,26 +30,17 @@ var _schedules = schedules;
             let mosqueSchedule = item.mosqueReaders.find(r => r.readerIds.includes(readerId));
             if (mosqueSchedule?.readerIds?.length > 0) {
                 let mosque = _mosques.find(r => r.id == mosqueSchedule.mosqueId);
-                let mosqueCard = drawReaderElement(item.day, [mosque.name], "المسجد", 100);
+                let mosqueCard = drawReaderElement(item.day, item.dayName, [mosque.name], "المسجد", 125);
+                document.getElementById("mosque-readers").appendChild(mosqueCard);
+            } else {
+                let mosqueCard = drawReaderElement(item.day, item.dayName, ["غير متوفر"], "المسجد", 125);
                 document.getElementById("mosque-readers").appendChild(mosqueCard);
             }
         });
     }
-
-
-
-
 })();
 
-/*
-            
-                <h4 class="title"><a href=""><span class="text-dark">القارئ :</span> محمد مبروك</a></h4>
-                <h4 class="title"><a href=""><span class="text-dark">القارئ :</span> محمد مدحت</a></h4>
-                <h4 class="title"><a href=""><span class="text-dark">القارئ :</span> محمد مدحت</a></h4>
-
-*/
-
-function drawReaderElement(day, readers, placeHolder, height) {
+function drawReaderElement(day, dayName, readers, placeHolder, height) {
     let divElement = document.createElement("div");
     divElement.className += `col-lg-3 col-md-6`;
 
@@ -63,18 +53,23 @@ function drawReaderElement(day, readers, placeHolder, height) {
     iconElement.className += `icon`;
 
     let dayElement = document.createElement("span");
-    dayElement.innerHTML = day;
+    dayElement.innerHTML = `ليلة`;
     iconElement.appendChild(dayElement);
 
     let monthElement = document.createElement("span");
-    monthElement.innerHTML = "رمضان";
+    monthElement.innerHTML = `${day} رمضان`;
     iconElement.appendChild(monthElement);
 
     iconBoxElement.appendChild(iconElement);
 
-
     let personElement = document.createElement("div");
     personElement.className += `persons`;
+
+    let dayNameElement = document.createElement("h4");
+    dayNameElement.className += `title`;
+    dayNameElement.innerHTML += "<span class='text-muted'>اليوم : </span>";
+    dayNameElement.innerHTML += dayName;
+    personElement.appendChild(dayNameElement);
 
     readers.forEach(reader => {
         let readerNameElement = document.createElement("h4");
