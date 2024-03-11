@@ -9,84 +9,68 @@ var _schedules = schedules.filter(r => r.date < new Date());
     const readerId = +urlParams.get('readerId');
 
     if (mosqueId > 0) {
+
         let mosque = _mosques.find(m => m.id == mosqueId);
         document.getElementById("type").innerHTML = 'قراء تراويح مسجد ';
         document.getElementById("mosque-name").innerHTML = mosque.name;
 
-        _schedules.forEach(item => {
-            let mosqueSchedules = item.mosqueReaders.find(r => r.mosqueId == mosqueId);
-            if (mosqueSchedules?.readerIds?.length > 0) {
-                let mosqueReaders = _readers.filter(r => mosqueSchedules?.readerIds?.includes(r.id));
-                let reader = drawReaderElement(item.day, item.dayName, mosqueReaders.map(r => r.name), "القارئ", 135);
-                document.getElementById("mosque-readers").appendChild(reader);
-            }
+        _schedules.forEach(scheduleItem => {
+            let mosqueSchedules = scheduleItem.mosqueReaders.find(r => r.mosqueId == mosqueId);
+            let mosqueReaders = _readers.filter(r => mosqueSchedules?.readerIds?.includes(r.id));
+            let reader = drawReaderElement(scheduleItem.day, scheduleItem.dayName, mosqueReaders, "القارئ", "readerId", 135);
+            document.getElementById("mosque-readers").appendChild(reader);
         });
+
     } else {
+
         let reader = _readers.find(r => r.id == readerId);
-        document.getElementById("type").innerHTML = 'مساجد القارئ ';
+        document.getElementById("type").innerHTML = 'القارئ ';
         document.getElementById("mosque-name").innerHTML = reader.name;
+        document.getElementById("reader-photo").innerHTML = `<img src="./assets/img/readers/${reader.imageUrl?.length ? reader.imageUrl : 'default-reader.png'}">`;
 
         _schedules.forEach(item => {
             let mosqueSchedule = item.mosqueReaders.find(r => r.readerIds.includes(readerId));
-            if (mosqueSchedule?.readerIds?.length > 0) {
-                let mosque = _mosques.find(r => r.id == mosqueSchedule.mosqueId);
-                let mosqueCard = drawReaderElement(item.day, item.dayName, [mosque.name], "المسجد", 125);
-                document.getElementById("mosque-readers").appendChild(mosqueCard);
-            } else {
-                let mosqueCard = drawReaderElement(item.day, item.dayName, ["غير متوفر"], "المسجد", 125);
-                document.getElementById("mosque-readers").appendChild(mosqueCard);
-            }
+            let mosque = _mosques.find(r => r.id == mosqueSchedule?.mosqueId);
+            let mosqueCard = drawReaderElement(item.day, item.dayName, mosque ? [mosque] : [], "المسجد", "mosqueId", 125);
+            document.getElementById("mosque-readers").appendChild(mosqueCard);
         });
+
     }
 })();
 
-function drawReaderElement(day, dayName, readers, placeHolder, height) {
+function drawReaderElement(day, dayName, readers, placeHolder, segment, height) {
     let divElement = document.createElement("div");
     divElement.className += `col-lg-3 col-md-6`;
 
-    let iconBoxElement = document.createElement("div");
-    iconBoxElement.className += `icon-box`;
-    iconBoxElement.style.height = height + 'px';
-    iconBoxElement.setAttribute("data-aos", "fade-up");
+    let unavailable = `<h4 class="title">
+                            <span class="text-muted">${placeHolder} : </span>
+                            <span>غير متوفر</span>
+                        </h4>`;
 
-    let iconElement = document.createElement("div");
-    iconElement.className += `icon`;
+    let personElement = `<div class='persons'><h4 class='title'><span class='text-muted'>اليوم : </span> ${dayName}</h4>`;
 
-    let dayElement = document.createElement("span");
-    dayElement.innerHTML = `ليلة`;
-    iconElement.appendChild(dayElement);
+    if (readers?.length) {
+        readers.forEach(reader => {
+            let readerElement = `<h4 class="title">
+                                    <span class="text-muted">${placeHolder} : </span>
+                                    <a href="./mosque-readers.html?${segment}=${reader.id}">${reader.name}</a>
+                                </h4>`;
+            personElement += reader.id > 0 ? readerElement : unavailable;
+        });
+    } else {
+        personElement += unavailable;
+    }
 
-    let monthElement = document.createElement("span");
-    monthElement.innerHTML = `${day} رمضان`;
-    iconElement.appendChild(monthElement);
+    personElement += '</div>';
 
-    iconBoxElement.appendChild(iconElement);
+    let iconBoxElement = `<div class='icon-box' data-aos='fade-up' style='height: ${height}px'>
+                            <div class='icon'>
+                                <span>ليلة</span
+                                <span>${day} رمضان</span>
+                            </div>
+                            ${personElement}
+                        </div>`;
 
-    let personElement = document.createElement("div");
-    personElement.className += `persons`;
-
-    let dayNameElement = document.createElement("h4");
-    dayNameElement.className += `title`;
-    dayNameElement.innerHTML += "<span class='text-muted'>اليوم : </span>";
-    dayNameElement.innerHTML += dayName;
-    personElement.appendChild(dayNameElement);
-
-    readers.forEach(reader => {
-        let readerNameElement = document.createElement("h4");
-        readerNameElement.className += `title`;
-
-        let personNickElement = document.createElement("span");
-        personNickElement.className += `text-muted`;
-        personNickElement.innerHTML = `${placeHolder} : `;
-
-        readerNameElement.appendChild(personNickElement);
-        readerNameElement.innerHTML += reader;
-
-        personElement.appendChild(readerNameElement);
-    });
-
-    iconBoxElement.appendChild(personElement);
-    divElement.appendChild(iconBoxElement);
-
+    divElement.innerHTML += iconBoxElement;
     return divElement;
 }
