@@ -2,7 +2,7 @@ var mosques = [
     { id: 1, name: 'المساكن', address: 'بدواى - بجوار نادى شبان بدواى', youtubeUrl: '', imageUrl: '' },
     { id: 2, name: 'التسويق', address: 'بدواي - بجوار الثلاجة', youtubeUrl: '', imageUrl: '' },
     { id: 3, name: 'عائشة رياض', address: 'بدواى - بجوار الحاج صبرى', youtubeUrl: '', imageUrl: '' },
-    { id: 4, name: 'قباء', address: 'بدواى - امام الثانوى العام', youtubeUrl: '', imageUrl: '' },
+    { id: 4, name: 'قباء "عيسي"', address: 'بدواى - امام الثانوى العام', youtubeUrl: '', imageUrl: '' },
     { id: 5, name: 'عباد الرحمن', address: 'بدواى', youtubeUrl: '', imageUrl: '' },
     { id: 6, name: 'التوحيد', address: 'بدواى - الميدان', youtubeUrl: '', imageUrl: '' },
     { id: 7, name: 'رياض الصالحين', address: 'بدواى', youtubeUrl: '', imageUrl: '' },
@@ -19,7 +19,7 @@ var mosques = [
     { id: 18, name: 'علي عبدالسلام', address: 'بدواى', youtubeUrl: '', imageUrl: '' },
     { id: 19, name: 'الزاوية', address: 'بدواى', youtubeUrl: '', imageUrl: '' },
     { id: 20, name: 'الكبير', address: 'بدواى', youtubeUrl: '', imageUrl: '' },
-    { id: 21, name: 'الساجدين', address: 'بدواى', youtubeUrl: '', imageUrl: '' },
+    { id: 21, name: 'الساجدين "عديسه"', address: 'بدواى', youtubeUrl: '', imageUrl: '' },
 ];
 
 var readers = [
@@ -50,6 +50,7 @@ var readers = [
     { id: 24, name: 'احمد الحارون', youtubeUrl: '', imageUrl: '' },
     { id: 25, name: 'عبدالله مرزوق', youtubeUrl: '', imageUrl: '' },
     { id: 26, name: 'ضياء احمد', youtubeUrl: '', imageUrl: 'diaa-ahmed.jpeg' },
+    { id: 27, name: 'رضا عبدالعزيز', youtubeUrl: '', imageUrl: '' },
 ];
 
 var schedules = [
@@ -65,7 +66,7 @@ var schedules = [
             { mosqueId: 5, readerIds: [5,7] },
             { mosqueId: 6, readerIds: [4] },
             { mosqueId: 7, readerIds: [0] },
-            { mosqueId: 8, readerIds: [0] },
+            { mosqueId: 8, readerIds: [27] },
             { mosqueId: 9, readerIds: [0] },
             { mosqueId: 10, readerIds: [19] },
             { mosqueId: 11, readerIds: [1,22] },
@@ -75,7 +76,7 @@ var schedules = [
             { mosqueId: 15, readerIds: [25] },
             { mosqueId: 16, readerIds: [15] },
             { mosqueId: 17, readerIds: [16] },
-            { mosqueId: 18, readerIds: [0] },
+            { mosqueId: 18, readerIds: [23] },
             { mosqueId: 19, readerIds: [24] },
             { mosqueId: 20, readerIds: [21] },
             { mosqueId: 21, readerIds: [26] }
@@ -93,7 +94,7 @@ var schedules = [
             { mosqueId: 5, readerIds: [5,7] },
             { mosqueId: 6, readerIds: [4] },
             { mosqueId: 7, readerIds: [0] },
-            { mosqueId: 8, readerIds: [0] },
+            { mosqueId: 8, readerIds: [27] },
             { mosqueId: 9, readerIds: [0] },
             { mosqueId: 10, readerIds: [19] },
             { mosqueId: 11, readerIds: [1,22] },
@@ -103,7 +104,7 @@ var schedules = [
             { mosqueId: 15, readerIds: [25] },
             { mosqueId: 16, readerIds: [15] },
             { mosqueId: 17, readerIds: [16] },
-            { mosqueId: 18, readerIds: [0] },
+            { mosqueId: 18, readerIds: [23] },
             { mosqueId: 19, readerIds: [24] },
             { mosqueId: 20, readerIds: [21] },
             { mosqueId: 21, readerIds: [26] }
@@ -121,7 +122,7 @@ var schedules = [
             { mosqueId: 5, readerIds: [5,7] },
             { mosqueId: 6, readerIds: [4] },
             { mosqueId: 7, readerIds: [0] },
-            { mosqueId: 8, readerIds: [0] },
+            { mosqueId: 8, readerIds: [27] },
             { mosqueId: 9, readerIds: [0] },
             { mosqueId: 10, readerIds: [19] },
             { mosqueId: 11, readerIds: [1,22] },
@@ -131,7 +132,7 @@ var schedules = [
             { mosqueId: 15, readerIds: [25] },
             { mosqueId: 16, readerIds: [15] },
             { mosqueId: 17, readerIds: [16] },
-            { mosqueId: 18, readerIds: [0] },
+            { mosqueId: 18, readerIds: [23] },
             { mosqueId: 19, readerIds: [24] },
             { mosqueId: 20, readerIds: [21] },
             { mosqueId: 21, readerIds: [26] }
@@ -149,7 +150,7 @@ var schedules = [
             { mosqueId: 5, readerIds: [5,7] },
             { mosqueId: 6, readerIds: [4] },
             { mosqueId: 7, readerIds: [0] },
-            { mosqueId: 8, readerIds: [0] },
+            { mosqueId: 8, readerIds: [27] },
             { mosqueId: 9, readerIds: [0] },
             { mosqueId: 10, readerIds: [19] },
             { mosqueId: 11, readerIds: [1,22] },
@@ -159,7 +160,7 @@ var schedules = [
             { mosqueId: 15, readerIds: [25] },
             { mosqueId: 16, readerIds: [15] },
             { mosqueId: 17, readerIds: [16] },
-            { mosqueId: 18, readerIds: [0] },
+            { mosqueId: 18, readerIds: [23] },
             { mosqueId: 19, readerIds: [24] },
             { mosqueId: 20, readerIds: [21] },
             { mosqueId: 21, readerIds: [26] }
@@ -177,7 +178,7 @@ var schedules = [
             { mosqueId: 5, readerIds: [5,7] },
             { mosqueId: 6, readerIds: [4] },
             { mosqueId: 7, readerIds: [0] },
-            { mosqueId: 8, readerIds: [0] },
+            { mosqueId: 8, readerIds: [27] },
             { mosqueId: 9, readerIds: [0] },
             { mosqueId: 10, readerIds: [19] },
             { mosqueId: 11, readerIds: [1,22] },
@@ -187,7 +188,7 @@ var schedules = [
             { mosqueId: 15, readerIds: [25] },
             { mosqueId: 16, readerIds: [15] },
             { mosqueId: 17, readerIds: [16] },
-            { mosqueId: 18, readerIds: [0] },
+            { mosqueId: 18, readerIds: [23] },
             { mosqueId: 19, readerIds: [24] },
             { mosqueId: 20, readerIds: [21] },
             { mosqueId: 21, readerIds: [26] }
