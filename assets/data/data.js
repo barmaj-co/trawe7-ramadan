@@ -11,7 +11,7 @@ var mosques = [
     { id: 10, name: 'عبدالرحمن', address: 'بدواى', youtubeUrl: '', imageUrl: '' },
     { id: 11, name: 'أهل السنة', address: 'بدواى', youtubeUrl: '', imageUrl: '' },
     { id: 12, name: 'يوسف الصديق', address: 'بدواى', youtubeUrl: '', imageUrl: '' },
-    { id: 13, name: 'امام المرسلين', address: 'بدواى', youtubeUrl: '', imageUrl: '' },
+    { id: 13, name: 'امام المرسلين "السيد الامام"', address: 'بدواى', youtubeUrl: '', imageUrl: '' },
     { id: 14, name: 'سيد اسحاق', address: 'بدواى', youtubeUrl: '', imageUrl: '' },
     { id: 15, name: 'رزق ابو ندا', address: 'بدواى', youtubeUrl: '', imageUrl: '' },
     { id: 16, name: 'فتوح', address: 'بدواى', youtubeUrl: '', imageUrl: '' },
