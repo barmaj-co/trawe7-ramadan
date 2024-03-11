@@ -2,7 +2,7 @@ var _readers = readers;
 
 (function () {
     _readers.sort((a, b) => a.name.localeCompare(b.name));
-    _readers.forEach(item => {
+    _readers.filter(r => r.id > 0).forEach(item => {
         let reader = drawPersonElement(item.id, item.name, item.imageUrl);
         document.getElementById("psersons").appendChild(reader);
     });
