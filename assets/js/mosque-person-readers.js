@@ -11,7 +11,7 @@ var _schedules = schedules.filter(r => r.date < new Date());
     if (mosqueId > 0) {
 
         let mosque = _mosques.find(m => m.id == mosqueId);
-        document.getElementById("type").innerHTML = 'قراء تراويح مسجد ';
+        document.getElementById("type").innerHTML = 'قراء مسجد ';
         document.getElementById("mosque-name").innerHTML = mosque.name;
 
         _schedules.forEach(scheduleItem => {
