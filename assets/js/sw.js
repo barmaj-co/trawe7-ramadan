@@ -1,14 +1,14 @@
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function () {
-        navigator.serviceWorker.register('/assets/js/sw.js').then(function (registration) {
-            // Registration was successful
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        }, function (err) {
-            // registration failed :(
-            console.log('ServiceWorker registration failed: ', err);
-        });
+// Check if the browser supports service workers and the beforeinstallprompt event
+if ('serviceWorker' in navigator && 'beforeinstallprompt' in window) {
+    // Register the service worker
+    navigator.serviceWorker.register('/assets/js/sw.js').then(reg => {
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+
+    }).catch(error => {
+        console.error('Service worker registration failed:', error);
     });
 }
+
 
 
 // let deferredPrompt;
