@@ -421,7 +421,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-#hero .btn-get-started {
+#hero .btn-get-started ,
+#more-advices-btn{
   font-family: "Muli", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -440,6 +441,16 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .btn-get-started:hover {
   background: #bfa161;
+  color: #fff;
+  text-decoration: none;
+}
+
+#more-advices-btn{
+  background: rgba(28, 23, 21, 0.7);
+  border: 0;
+}
+
+#more-advices-btn:hover{
   color: #fff;
   text-decoration: none;
 }

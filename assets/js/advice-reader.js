@@ -1,10 +1,16 @@
 var _advices = advices;
 
 (function () {
-    // _advices.sort((a, b) => a.title.localeCompare(b.title));
-    _advices.forEach(item => {
+    
+    if(_advices.length < 3){
+        document.getElementById("more-advices-btn").style.display = "none";
+    }
+
+    let homeAdvices = document.getElementById("advices");
+    let idSection = homeAdvices ? "advices" : "allAdvices";
+    _advices.slice(homeAdvices ? -3 : 0).forEach(item => {
         let advice = drawAdviceElement(item.type, item.title, item.description);
-        document.getElementById("advices").appendChild(advice);
+        document.getElementById(idSection).appendChild(advice);
     });
 })();
 

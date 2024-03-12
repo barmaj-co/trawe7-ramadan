@@ -34,26 +34,7 @@
 
 <body>
 
-    <!-- ======= Header ======= -->
-    <header id="header">
-        <div class="container d-flex">
-
-            <div class="logo">
-                <h1 class="text-light"><a href="index.html">تراويح رمضان</a></h1>
-            </div>
-
-            <nav class="nav-menu d-none d-lg-block">
-                <ul>
-                    <li><a href="readers.html">القراء</a></li>
-                    <li class="active"><a href="mosques.html">المساجد</a></li>
-                    <li><a href="index.html">الرئيسية</a></li>
-                </ul>
-            </nav><!-- .nav-menu -->
-
-            <div id="install-btn-section">
-                <button id="install-btn" class="btn btn-warning"> تنزيل &#9735; </button>			</div>
-        </div>
-    </header><!-- End Header -->
+    <header id="header"></header>
 
     <main id="main">
 
@@ -101,7 +82,11 @@
     <script src="assets/data/data.js"></script>
     <script src="assets/js/mosque-reader.js"></script>
     <script src="assets/js/footer.js"></script>
-
+    <script src="assets/js/header-menu.js"></script>
+    <script>
+      drawHeaderMenuElement('mosques');
+    </script>
+  
 </body>
 
 </html>

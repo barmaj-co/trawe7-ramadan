@@ -35,28 +35,7 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container d-flex">
-
-      <div class="logo">
-        <h1 class="text-light"><a href="index.html">تراويح رمضان</a></h1>
-      </div>
-
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li><a href="readers.html">القراء</a></li>
-          <li><a href="mosques.html">المساجد</a></li>
-          <li class="active"><a href="index.html">الرئيسية</a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-
-      <div id="install-btn-section">
-        <button id="install-btn" class="btn btn-warning"> تنزيل &#9735; </button>			</div>
-
-
-    </div>
-  </header><!-- End Header -->
+  <header id="header"></header>
 
   <section id="hero">
     <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
@@ -107,11 +86,14 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>ازاى تستغل شهر <strong> رمضان ؟</strong></h2>
+          <h2>نصائح <strong> رمضانية</strong></h2>
         </div>
 
         <div class="row" id="advices"></div>
 
+        <div class="text-center" data-aos="fade-up">
+            <a href="./advices.html" id="more-advices-btn">المزيد</a>
+        </div>
       </div>
     </section>
   </main>
@@ -139,6 +121,10 @@
   <script src="assets/data/advice.data.js"></script>
   <script src="assets/js/advice-reader.js"></script>
   <script src="assets/js/footer.js"></script>
+  <script src="assets/js/header-menu.js"></script>
+  <script>
+    drawHeaderMenuElement('home');
+  </script>
 
 </body>
 
