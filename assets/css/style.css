@@ -644,6 +644,11 @@ section {
   padding-top: 40px;
 }
 
+.services .icon-box .description{
+  overflow-y: auto;
+  height: 100px;
+}
+
 .services .persons{
   overflow-y: auto;
   height: 80px;

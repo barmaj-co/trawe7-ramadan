@@ -35,7 +35,18 @@
 
 <body>
 
-  <header id="header"></header>
+  <header id="header">
+    <div class="container d-flex">
+
+      <div id="headerLogo" class="logo"></div>
+      <nav id="menuItems" class="nav-menu d-none d-lg-block"></nav>
+
+      <div id="install-btn-section">
+        <button id="install-btn" class="btn btn-warning"> تنزيل &#9735; </button>
+      </div>
+
+    </div>
+  </header>
 
   <section id="hero">
     <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
@@ -103,6 +114,9 @@
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
 
+  <script src="assets/js/header-menu.js"></script>
+  <script>drawHeaderMenuElement('home')</script>
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -121,10 +135,6 @@
   <script src="assets/data/advice.data.js"></script>
   <script src="assets/js/advice-reader.js"></script>
   <script src="assets/js/footer.js"></script>
-  <script src="assets/js/header-menu.js"></script>
-  <script>
-    drawHeaderMenuElement('home');
-  </script>
 
 </body>
 
