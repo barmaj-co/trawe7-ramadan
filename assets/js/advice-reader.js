@@ -2,7 +2,7 @@ var _advices = advices;
 
 (function () {
     
-    if(_advices.length < 3){
+    if(_advices.length < 3 && document.getElementById("more-advices-btn")){
         document.getElementById("more-advices-btn").style.display = "none";
     }
 
