@@ -2,7 +2,7 @@ var _advices = advices;
 
 (function () {
     
-    if(_advices.length < 3 && document.getElementById("more-advices-btn")){
+    if(_advices.length <= 3 && document.getElementById("more-advices-btn")){
         document.getElementById("more-advices-btn").style.display = "none";
     }
 
@@ -20,7 +20,7 @@ function drawAdviceElement(type, title, description) {
 
     divElement.innerHTML += `<div class="icon-box" data-aos="fade-up">
                                 <h4 class="title">${title}</h4>
-                                <p class="description">"${description}"</p>
+                                <p class="description">${description}</p>
                                 <div class="icon">${type}</div>
                             </div>`;
 
