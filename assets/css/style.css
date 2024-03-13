@@ -455,6 +455,14 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+#advices .icon-box .description{
+  font-weight: 700;
+}
+
+#advices .icon-box .description sub{
+  font-weight: 300;
+}
+
 #hero .carousel-inner .carousel-item {
   transition-property: opacity;
 }
