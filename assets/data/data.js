@@ -221,6 +221,34 @@ var schedules = [
             { mosqueId: 20, readerIds: [21] },
             { mosqueId: 21, readerIds: [26] }
         ]
+    },
+    {
+        day: 7,
+        dayName: 'السبت',
+        date: new Date("3/16/2024, 4:30:00 PM"),
+        mosqueReaders: [
+            { mosqueId: 1, readerIds: [6] },      // المساكن
+            { mosqueId: 2, readerIds: [2] },      // التسويق
+            { mosqueId: 3, readerIds: [8] },      // عائشة رياض
+            { mosqueId: 4, readerIds: [10, 14] }, // عيسي
+            { mosqueId: 5, readerIds: [5, 7] },   // عباد الرحمن
+            { mosqueId: 6, readerIds: [13] },     // التوحيد
+            { mosqueId: 7, readerIds: [0] },      // رياض الصالحين
+            { mosqueId: 8, readerIds: [27] },     // الحاج حسين
+            { mosqueId: 9, readerIds: [0] },      // الرحمة 
+            { mosqueId: 10, readerIds: [19] },    //  عبدالرحمن
+            { mosqueId: 11, readerIds: [1, 22] }, // أهل السنة
+            { mosqueId: 12, readerIds: [9, 12] }, // يوسف الصديق
+            { mosqueId: 13, readerIds: [0] },     // السيد الامام
+            { mosqueId: 14, readerIds: [11] },    // سيد اسحاق
+            { mosqueId: 15, readerIds: [25] },    // رزق ابو ندا
+            { mosqueId: 16, readerIds: [0] },     // فتوح
+            { mosqueId: 17, readerIds: [16] },    // فهيم
+            { mosqueId: 18, readerIds: [23] },    // على عبدالسلام
+            { mosqueId: 19, readerIds: [24] },    // الزاوية
+            { mosqueId: 20, readerIds: [21] },    // الكبير
+            { mosqueId: 21, readerIds: [26] }     // عديسه
+        ]
     }
 ];
 
