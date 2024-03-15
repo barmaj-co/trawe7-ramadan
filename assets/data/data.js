@@ -36,7 +36,7 @@ var readers = [
     { id: 10, name: 'انس الشقرفى', youtubeUrl: '', imageUrl: 'anas-sho3rofi.jpeg' },
     { id: 11, name: 'عباس عبدالعزيز', youtubeUrl: '', imageUrl: '' },
     { id: 12, name: 'يوسف هشام', youtubeUrl: '', imageUrl: '' },
-    { id: 13, name: 'احمد السعيد على', youtubeUrl: '', imageUrl: '' },
+    { id: 13, name: 'احمد السعيد على', youtubeUrl: '', imageUrl: 'ahmed-elsaeed.jpeg' },
     { id: 14, name: 'محمد مدحت الحداد', youtubeUrl: '', imageUrl: 'mohamed-medhat.jpeg' },
     { id: 15, name: 'ابراهيم حمدى بلاطه', youtubeUrl: '', imageUrl: 'ibrahim-hamdy.jpeg' },
     { id: 16, name: 'حمدى بلاطه', youtubeUrl: '', imageUrl: '' },
